@@ -1,0 +1,14 @@
+{
+  "name": "app1-jquery",
+  "version": "1.0.0",
+  "description": "Hello world with jquery",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HosseiN Khademi Khaledi",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
