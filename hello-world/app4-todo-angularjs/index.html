@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Custom stylesheet-->
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+
+    <title>Todo app!</title>
+</head>
+
+<body ng-app="todoApp">
+    <div ng-controller="TodoController as ctrl" class="container">
+        <h1>Todo, list!</h1>
+        <div class="alert alert-info" role="alert">
+            {{ctrl.remaining()}} of {{ctrl.todos.length}} remaining
+        </div>
+        <form class="form-inline" ng-submit="ctrl.addTodo()">
+            <input type="text" class="form-control mb-2 mr-sm-2" ng-model="ctrl.todoText" placeholder="Enter todo here">
+            <button type="submit" class="btn btn-primary mb-2">Add</button>
+        </form>
+
+
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="todo in ctrl.todos">
+                <label class="checkbox">
+                    <input type="checkbox" ng-model="todo.done">
+                    <span class="done-{{todo.done}}">{{todo.text}}</span>
+                </label>
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

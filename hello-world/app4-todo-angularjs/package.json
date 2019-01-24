@@ -1,0 +1,16 @@
+{
+  "name": "app4-todo-angularjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hossein Khademi Khaledi",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.7.6",
+    "bootstrap": "^4.2.1",
+    "jquery": "^3.3.1"
+  }
+}
