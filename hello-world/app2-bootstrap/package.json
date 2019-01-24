@@ -1,0 +1,15 @@
+{
+  "name": "app2-bootstrap",
+  "version": "1.0.0",
+  "description": "Hello world with bootstrap",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HosseiN Khademi Khaledi",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "jquery": "^3.3.1"
+  }
+}
