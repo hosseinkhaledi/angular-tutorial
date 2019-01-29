@@ -10,3 +10,6 @@ max_line_length = 180
 trim_trailing_whitespace = true
 insert_final_newline = true
 
+
+[webpack.*.js]
+indent_size = 3

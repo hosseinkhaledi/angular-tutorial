@@ -29,7 +29,7 @@
 
         <ul class="list-group">
             <li class="list-group-item" ng-repeat="todo in ctrl.todos">
-                <label class="checkbox">
+                <div class="checkbox">
                     <input type="checkbox" ng-model="todo.done">
                     <span class="done-{{todo.done}}">{{todo.text}}</span>
                 </label>
